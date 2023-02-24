@@ -1,0 +1,105 @@
+<section class="detailpage">
+  <div class="container">
+  <div class="row">
+    <div class="col-9" *ngFor="let det of politicsNewsDisplay0">
+      <img src="{{det.urlToImage}}" alt="" class="big-image my-5">
+      <h2>{{det.title}}</h2>
+      <span class="d-flex">
+        <img src="{{det.urlToImage}}" alt="" class="round-img">
+        <div class="yazi">
+        <p class="d-inline">{{det.author}} in News</p>
+        <p class="soluk-yazi">{{det.publishedAt}}<i class="fa-solid fa-circle dot"></i> 3 min read <i class="fa-solid fa-star star"></i></p>
+        </div>
+      </span>
+      <br><br>
+      <p>{{det.content}}</p>
+        <br><br>
+
+
+        <h4 class="news-title-two">6 Comments</h4>
+        <br><br>
+
+        <!-- <img src="" alt="" class="round-img"> -->
+
+        <div class="comments">
+        <span class="d-flex">
+          <img src="{{det.urlToImage}}" alt="" class="round-img">
+          <div class="yazi">
+          <h6>Jean Doe</h6>
+          <p class="soluk-yazi">TARİH</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+          <button>REPLY</button>
+          </div>
+        </span>
+        <span class="d-flex">
+          <img src="{{det.urlToImage}}" alt="" class="round-img">
+          <div class="yazi">
+          <h6>Jean Doe</h6>
+          <p class="soluk-yazi">TARİH</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+          <button>REPLY</button>
+          </div>
+        </span>
+        <span class="d-flex">
+          <img src="{{det.urlToImage}}" alt="" class="round-img">
+          <div class="yazi">
+          <h6>Jean Doe</h6>
+          <p class="soluk-yazi">TARİH</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+          <button>REPLY</button>
+          </div>
+        </span>
+        <span class="d-flex">
+          <img src="{{det.urlToImage}}" alt="" class="round-img">
+          <div class="yazi">
+          <h6>Jean Doe</h6>
+          <p class="soluk-yazi">TARİH</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+          <button>REPLY</button>
+          </div>
+        </span>
+        <span class="d-flex">
+          <img src="{{det.urlToImage}}" alt="" class="round-img">
+          <div class="yazi">
+          <h6>Jean Doe</h6>
+          <p class="soluk-yazi">TARİH</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+          <button>REPLY</button>
+          </div>
+        </span>
+        <span class="d-flex">
+          <img src="{{det.urlToImage}}" alt="" class="round-img">
+          <div class="yazi">
+          <h6>Jean Doe</h6>
+          <p class="soluk-yazi">TARİH</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+          <button>REPLY</button>
+          </div>
+        </span>
+      </div>
+
+
+
+    <h4 class="news-title-two my-5">Leave a Comment</h4>
+    <br><br>
+    <div class="comment-form p-5 bg-light">
+      <form action="">
+        <label for="name">Name*</label>
+        <input type="text" id="name" class="shadow-sm comment-input mt-3">
+        <label for="email">Email*</label>
+        <input type="text" id="email" class="shadow-sm comment-input mt-3">
+        <label for="web">Website</label>
+        <input type="text" id="web" class="shadow-sm comment-input mt-3">
+        <label for="">Message</label>
+        <textarea name="" class="shadow-sm comment-input mt-3"></textarea>
+        <button class="form_buton">POST COMMENT</button>
+      </form>
+    </div>
+
+    </div>
+    <div class="col-3">
+
+    </div>
+  </div>
+</div>
+</section>

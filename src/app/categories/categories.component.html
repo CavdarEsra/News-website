@@ -1,0 +1,42 @@
+<section class="categories">
+  <div class="container">
+
+    <div class="news-top3-titles my-5">
+      <a href="#sidebar" class="d-block text-dark" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+        <h4 class="news-title text-decoration-none ">Category List &nbsp;<i class="fa-solid fa-arrow-pointer fa-3 "></i></h4>
+        <h5 class="">General</h5>
+      </a>
+     </div>
+
+   <div class="row mb-4" *ngFor="let t of topHeadingDisplay | paginate: { itemsPerPage: 4, currentPage: page,totalItems: totalLength }">
+    <div class="col-9">
+          <h6>{{t.title}}</h6>
+          <p>{{t.description}}</p>
+          <a href="" class="text-dark ">{{t.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+          <p class="soluk-yazi">{{t.publishedAt}}<i class="fa-solid fa-circle dot"></i> 3 min read <i class="fa-solid fa-star star"></i></p>
+      </div>
+    <div class="col-3"><img src="{{t.urlToImage}}" alt="" class="small_img"></div>
+   </div>
+   <pagination-controls (pageChange)="page = $event"></pagination-controls>
+  </div>
+</section>
+
+
+ <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+   <div class="offcanvas-header">
+     <h5 class="offcanvas-title" id="sidebar-label">Categories</h5>
+     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" arial-label="Close"></button>
+   </div>
+   <div class="offcanvass-body">
+     <ul>
+      <a routerLink="gener"><li>GENERAL</li></a>
+      <a routerLink="tech"><li>TECHNOLOGY</li></a>
+      <a routerLink="pol"><li>POLITICS</li></a>
+      <a routerLink="bus"><li>BUSINESS</li></a>
+      <a routerLink="enter"><li>ENTERTAINMENT</li></a>
+      <a routerLink="hea"><li>HEALTH</li></a>
+      <a routerLink="sci"><li>SCIENCE</li></a>
+      <a routerLink="spo"><li>SPORT</li></a>
+     </ul>
+   </div>
+ </div>

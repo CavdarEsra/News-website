@@ -1,0 +1,36 @@
+<section class="health">
+  <div class="container">
+
+  <div class="row" >
+
+    <div class="col-9 col-lg-9 col-md-12">
+      <h5 class="news-title-two">Health</h5>
+      <div class="row mb-4" *ngFor="let h of healthNewsDisplay | paginate: { itemsPerPage: 4, currentPage: page,totalItems: totalLength }">
+        <div class="col-9 p-3">
+          <h6>{{h.title}}</h6>
+          <p>{{h.description}}</p>
+          <a href="" class="text-dark ">{{h.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+          <p class="soluk-yazi">{{ h.publishedAt }}<i class="fa-solid fa-circle dot"></i> 3 min read <i class="fa-solid fa-star star"></i></p>
+        </div>
+        <div class="col-3"><img src="{{h.urlToImage}}" alt="" class="small_img"></div>
+      </div>
+      <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    </div>
+
+
+    <div class="col-lg-3 col-md-12">
+      <h5 class="news-title-two">Popular Posts</h5>
+      <div class="row" >
+        <!-- <div class="col-2 big-figure">
+          01
+        </div> -->
+        <div class="col-12" *ngFor="let pe popularNewsDisplay">
+          <h6>{{pe.title}}</h6>
+          <a href="" class="text-dark ">{{pe.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+          <p class="soluk-yazi">{{pe.publishedAt}} <i class="fa-solid fa-circle dot"></i> 3 min <i class="fa-solid fa-star star"></i></p>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+</section>

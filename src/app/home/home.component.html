@@ -1,0 +1,226 @@
+<section class="slider">
+  <div class="container">
+  <owl-carousel-o [options]="customOptions">
+
+
+      <ng-template carouselSlide>
+        <div class="row slider-card  mx-auto" *ngFor="let sl1 of politicsNewsDisplay1">
+          <div class="col-lg-6 col-md-12 slide-image">
+            <img src="{{sl1.urlToImage}}" alt="">
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <h5 class="slider-title1">POLITICS</h5>
+              <a routerLink="detailpage">
+                <h3 class="slider-title2">{{sl1.title}}</h3>
+              </a>
+            <p>{{sl1.description}}</p>
+            <a href="" class="text-dark ">{{sl1.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+            <p class="soluk-yazi">{{sl1.publishedAt}} <i class="fa-solid fa-circle dot"></i>3 min <i class="fa-solid fa-star star"></i></p>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template carouselSlide>
+        <div class="row slider-card  mx-auto" *ngFor="let sl2 of politicsNewsDisplay2">
+          <div class="col-lg-6 col-md-12 slide-image">
+            <img src="{{sl2.urlToImage}}"  alt="">
+          </div>
+          <div class="col-lg-6 col-md-12 ">
+            <h5 class="slider-title1">POLITICS</h5>
+              <a routerLink="detailpage">
+                <h3 class="slider-title2">{{sl2.title}}</h3>
+              </a>
+            <p>{{sl2.description}}</p>
+            <a href="" class="text-dark ">{{sl2.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+            <p class="soluk-yazi">{{sl2.publishedAt}} <i class="fa-solid fa-circle dot"></i>3 min <i class="fa-solid fa-star star"></i></p>
+          </div>
+        </div>
+      </ng-template>
+
+
+    <ng-template carouselSlide>
+      <div class="row slider-card  mx-auto" *ngFor="let sl3 of politicsNewsDisplay3">
+        <div class="col-lg-6 col-md-12 slide-image">
+          <img src="{{sl3.urlToImage}}"  alt="">
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <h5 class="slider-title1">POLITICS</h5>
+            <a routerLink="detailpage">
+              <h3 class="slider-title2">{{sl3.title}}</h3>
+            </a>
+          <p>{{sl3.description}}</p>
+          <a href="" class="text-dark ">{{sl3.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+          <p class="soluk-yazi">{{sl3.publishedAt}} <i class="fa-solid fa-circle dot"></i>3 min <i class="fa-solid fa-star star"></i></p>
+        </div>
+      </div>
+    </ng-template>
+    </owl-carousel-o>
+    </div>
+  </section>
+
+<section class="news-top3">
+  <div class="container ">
+    <!-- <div class="row news-top3-titles">
+      <div class="col-8"><h5 class="news-title">Sport</h5></div>
+      <div class="col-4"><h5 class="news-title">Trending</h5></div>
+    </div> -->
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 news-top3-left">
+      <h5 class="news-title">Sport</h5>
+        <div class="row" *ngFor="let sp0 of sportNewsDisplay0">
+        <div class=" mb-3">
+          <img src="{{sp0.urlToImage}}" alt="" class="news-top3-left-img ">
+        </div>
+        <div class="col-12 news-top3-left-content">
+          <a href=""><h5 class="text-dark">{{sp0.title}}</h5></a>
+          <p class="text-muted">{{sp0.description}}</p>
+          <a href="" class="text-dark ">{{sp0.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+          <p class="soluk-yazi">{{sp0.publishedAt}} <i class="fa-solid fa-circle dot"></i> 3 min <i class="fa-solid fa-star star"></i></p>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 news-top3-middle">
+      <h5 class="news-title text-light">ı</h5>
+        <div class="row small-div bg-light" *ngFor="let sp1 of sportNewsDisplay1">
+          <div class="col-4 ">
+            <img src="{{sp1.urlToImage}}" alt="" class="small-div-img">
+          </div>
+          <div class="col-8 small-div-content">
+            <h6>{{sp1.title}}</h6>
+            <a href="" class="text-dark ">{{sp1.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+            <p class="soluk-yazi">{{sp1.publishedAt}} <i class="fa-solid fa-circle dot"></i> 3 min <i class="fa-solid fa-star star"></i></p>
+          </div>
+        </div>
+
+        <div class="row small-div" *ngFor="let sp2 of sportNewsDisplay2">
+          <div class="col-4 ">
+            <img src="{{sp2.urlToImage}}" alt="" class="small-div-img">
+          </div>
+          <div class="col-8 small-div-content">
+            <h6>{{sp2.title}}</h6>
+            <a href="" class="text-dark ">{{sp2.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+            <p class="soluk-yazi">{{sp2.publishedAt}} <i class="fa-solid fa-circle dot"></i> 3 min <i class="fa-solid fa-star star"></i></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- *ngFor="let sayi of Sayilar" -->
+      <div class="col-lg-4 col-md-12 col-sm-12 news-top3-right">
+        <h5 class="news-title">Trending</h5>
+        <div class="row news-top3-right-content">
+          <div class="col-2 big-figure">
+            01
+          </div>
+          <div class="col-10" *ngFor="let po4 of topHeadingDisplay4 ">
+            <h6>{{po4.title}}</h6>
+            <a href="" class="text-dark ">Dave Rogers</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+            <p class="soluk-yazi">Tarih <i class="fa-solid fa-circle dot"></i> Okunma sayısı <i class="fa-solid fa-star star"></i></p>
+          </div>
+        </div>
+        <a href="#" class="see-all-trends" >SEE ALL TRENDES > </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+<div class="row slider-card mx-auto " *ngFor="let he1 of healthNewsDisplay1">
+  <div class="col-lg-6 col-md-12 p-0">
+    <img src="{{he1.urlToImage}}" alt="" class="slide-image ">
+  </div>
+  <div class="col-lg-6 col-md-12">
+    <div class="px-4">
+    <h5 class="slider-title1">Health</h5>
+    <h3 class="slider-title2">{{he1.title}}</h3>
+    <p>{{he1.description}}</p>
+    <a href="" class="text-dark ">{{he1.author}}</a> <span class="text-muted"> in </span> <a href="{{he1.url}}" class="text-dark" target="_blank">News</a>
+    <p class="soluk-yazi">{{he1.publishedAt}} <i class="fa-solid fa-circle dot"></i> 3 min <i class="fa-solid fa-star star"></i></p>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+
+    <div class="row card2li">
+      <div class="col-lg-6 col-md-12">
+        <h5 class="news-title">Politics</h5>
+          <div class="row cart" *ngFor="let po3 of politicsNewsDisplay33">
+            <div class="col-4">
+              <img src="{{po3.urlToImage}}" alt="" class=" three-img">
+            </div>
+            <div class="col-8 p-3">
+              <h6>{{po3.title}}</h6>
+              <p>{{po3.description}}</p>
+              <a href="" class="text-dark ">{{po3.author}}</a> <span class="text-muted"> in </span>
+               <a href="{{po3.url}}" class="text-dark">News</a>
+              <p class="soluk-yazi">{{po3.publishedAt}} <i class="fa-solid fa-circle dot"></i> 3 min <i class="fa-solid fa-star star"></i></p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12">
+      <h5 class="news-title">Business</h5>
+        <div class="row cart" *ngFor="let bus3 of businessNewsDisplay3">
+          <div class="col-4">
+            <img src="{{bus3.urlToImage}}" alt="" class=" three-img">
+          </div>
+          <div class="col-8 p-3">
+            <h6>{{bus3.title}}</h6>
+            <p>{{bus3.description}}</p>
+            <a href="" class="text-dark ">{{bus3.author}}</a> <span class="text-muted"> in </span> <a href="{{bus3.url}}" class="text-dark">News</a>
+            <p class="soluk-yazi">{{bus3.publishedAt}} <i class="fa-solid fa-circle dot"></i> 3 min <i class="fa-solid fa-star star"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<section class="sonhaberler">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-8 col-md-12">
+        <h5 class="news-title">Recent News</h5>
+        <div class="row mb-5" *ngFor="let recent4 of recentNewsDisplay | paginate: { itemsPerPage: 4, currentPage: page,totalItems: totalLength }">
+          <div class="col-9">
+            <h6>{{recent4.title}}</h6>
+            <p>{{recent4.description}}</p>
+            <a href="" class="text-dark ">{{recent4.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+            <p class="soluk-yazi mb-5">{{recent4.publishedAt}} <i class="fa-solid fa-circle dot"></i>3 min <i class="fa-solid fa-star star"></i></p>
+          </div>
+          <div class="col-3">
+            <img src="{{recent4.urlToImage}}" alt="" class="three-img">
+          </div>
+        </div>
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
+      </div>
+
+    <div class="col-lg-4 col-md-12">
+      <h5 class="news-title">Popular Posts</h5>
+          <div class="row mb-3" *ngFor="let popular of popularNewsDisplay">
+
+              <div class="col-3"></div>
+            <!-- <div class="col-2 mb-3" *ngFor="let sayi of Sayilar">
+              <span class="big-figure float-right">0{{sayi}}</span>
+            </div> -->
+
+              <div class="col-9 float-left">
+                <h6>{{popular.title}}</h6>
+                <a href="" class="text-dark ">{{popular.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+                <p class="soluk-yazi">{{popular.publishedAt}} <i class="fa-solid fa-circle dot"></i> 3 min <i class="fa-solid fa-star star"></i></p>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

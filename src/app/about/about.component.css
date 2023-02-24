@@ -1,0 +1,10 @@
+.about{
+  padding-top: 70px;
+  background-color: var(--acikgri);
+  padding: 50px;
+}
+.about h1{
+  text-shadow: 2px 2px 8px #5e5e5e;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,37 @@
+<section class="business">
+  <div class="container">
+
+  <div class="row" >
+
+    <div class="col-lg-9 col-md-12">
+      <h5 class="news-title-two">Business</h5>
+      <div class="row mb-4" *ngFor="let b of businessNewsDisplay | paginate: { itemsPerPage: 4, currentPage: page,totalItems: totalLength }">
+        <div class="col-9 p-3">
+          <a href="{{b.url}}" target="_blank" class="baslik_linki"><h6>{{b.title}}</h6></a>
+          <p>{{b.description}}</p>
+          <a href="" class="text-dark ">{{b.author}}</a> <span class="text-muted"> in </span> <a href="{{b.url}}" class="text-dark">News</a>
+          <p class="soluk-yazi">{{b.publishedAt }}<i class="fa-solid fa-circle dot"></i> 3 min read <i class="fa-solid fa-star star"></i></p>
+        </div>
+        <div class="col-3"><img src="{{b.urlToImage}}" alt="" class="small_img"></div>
+      </div>
+      <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    </div>
+
+
+
+    <div class="col-lg-3 col-md-12">
+      <h5 class="news-title-two">Popular Posts</h5>
+      <div class="row" >
+        <!-- <div class="col-2 big-figure">
+          01
+        </div> -->
+        <div class="col-12" *ngFor="let pop2 of popularNewsDisplay">
+          <h6>{{pop2.title}}</h6>
+          <a href="" class="text-dark ">{{pop2.author}}</a> <span class="text-muted"> in </span> <a href="" class="text-dark">News</a>
+          <p class="soluk-yazi">{{pop2.publishedAt}} <i class="fa-solid fa-circle dot"></i> 3 min <i class="fa-solid fa-star star"></i></p>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+</section>

@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="nav-top">
+    <div class="row">
+      <div class="col-6">
+        <a href="" class="logo">Meranda</a>
+      </div>
+      <div class="enalt-sag col-lg-6 col-md-8 col-sm-12">
+        <form action="">
+          <input type="text" placeholder="Search..." class="shadow-sm">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row nav-top2" appScroll>
+  <div class="col-12">
+  <div class="menu_icon" [class.menu_icon_class]="menu_icon_variable" (click)="openMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="menu" [class.menuClass]="menuVariable">
+    <ul>
+      <a class="navbar_link" routerLink=""><li>HOME</li></a>
+      <a class="navbar_link" routerLink="categories"><li>CATEGORIES</li></a>
+      <a class="navbar_link" routerLink="politics"><li>POLITICS</li></a>
+      <a class="navbar_link" routerLink="business"><li>BUSINESS</li></a>
+      <a class="navbar_link" routerLink="health"><li>HEALTH</li></a>
+      <a class="navbar_link" routerLink="sport"><li>SPORT</li></a>
+      <a class="navbar_link" routerLink="contact"><li>CONTACT</li></a>
+      <a class="navbar_link" routerLink="about"><li>ABOUT</li></a>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+<hr class="mb-0">
+
+
+
+<router-outlet></router-outlet>
+
+
+<div class="container-fluid">
+    <div class="row enalt  bg-light align-items-center">
+    <div class="enalt-sol col-lg-6 col-md-12 ml-5 ">
+      <h5>Newsletter Subcribe</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aspernatur ut at quae omnis pariatur obcaecati possimus nisi ea iste!</p>
+    </div>
+    <div class="enalt-sag col-lg-6 col-md-12">
+      <form action="">
+        <input type="text" placeholder="Enter your mail" class="shadow-sm">
+        <button><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="row w-100 bg-light enalt">
+  <div class="container">
+  <div class="col-lg-6 col-md-12 enalt-sol">
+    <span class="d-flex justify-content-center align-items-center pt-5">
+      <h5>Newsletter Subcribe</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis aspernatur ut at quae omnis pariatur obcaecati possimus nisi ea iste!</p>
+    </span>
+  </div>
+</div>
+  <div class="col-lg-6 col-md-12 enalt-sag">
+    <span class="d-flex justify-content-center align-items-center">
+      <form action="">
+        <input type="text" placeholder="Enter your mail" class="shadow-sm">
+        <button><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </span>
+  </div>
+</div> -->
+
+<footer>
+<div class="container">
+  <div class="footer-yazi">
+    <span>Copyright©2023 All right reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="#"> Colorlib</a></span>
+  </div>
+</div>
+</footer>
